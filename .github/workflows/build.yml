@@ -39,9 +39,9 @@ jobs:
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_TOKEN: "048574305e666c53802cf87793df54ad3a01b765"
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"furkancelikci-rd_DiscountCalculationTool" /o:"furkancelikci-rd" /d:sonar.login="048574305e666c53802cf87793df54ad3a01b765" /d:sonar.host.url="https://sonarcloud.io"
-          MSBuild.exe "DiscountCalculationTool.sln"
+          dotnet build "DiscountCalculationTool.sln"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="048574305e666c53802cf87793df54ad3a01b765"
