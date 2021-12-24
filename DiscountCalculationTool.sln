@@ -5,13 +5,18 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DCT.WebAPI", "DiscountCalculationTool.WebAPI\DCT.WebAPI.csproj", "{7A2B365E-3F49-4E48-9C63-7AAC7E3D1ECE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCT.Common", "DCT.Common\DCT.Common.csproj", "{9C3985EB-8356-45E8-B3F1-C522AFE6FE37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DCT.Common", "DCT.Common\DCT.Common.csproj", "{9C3985EB-8356-45E8-B3F1-C522AFE6FE37}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{57DD945B-27BA-4BE3-954B-2BC991F79E0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCT.BLL.Test", "DCT.BLL.Test\DCT.BLL.Test.csproj", "{4C2E6A30-D5C9-48BC-BDD5-595F2F300D66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DCT.BLL.Test", "DCT.BLL.Test\DCT.BLL.Test.csproj", "{4C2E6A30-D5C9-48BC-BDD5-595F2F300D66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCT.BLL", "DCT.BLL\DCT.BLL.csproj", "{C29AC50A-F72C-456E-AA53-9652D63E63D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DCT.BLL", "DCT.BLL\DCT.BLL.csproj", "{C29AC50A-F72C-456E-AA53-9652D63E63D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D2A2A3DB-F9E8-4AB0-A54E-A730B117A8B0}"
+	ProjectSection(SolutionItems) = preProject
+		sonar-project.properties = sonar-project.properties
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
