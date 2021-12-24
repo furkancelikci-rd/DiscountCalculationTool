@@ -24,9 +24,9 @@ namespace DCT.BLL.Service
         {
             var netAmount = userType switch
             {
-                UserType.StoreEmployee when isGroceriesProduct == false => totalAmount - (totalAmount * 30 / 100),
-                UserType.StoreAffiliate when isGroceriesProduct == false => totalAmount - (totalAmount * 10 / 100),
-                UserType.CustomerOverForTwoYears when isGroceriesProduct == false => totalAmount - (totalAmount * 5 / 100),
+                UserType.StoreEmployee when !isGroceriesProduct => totalAmount - (totalAmount * 30 / 100),
+                UserType.StoreAffiliate when !isGroceriesProduct => totalAmount - (totalAmount * 10 / 100),
+                UserType.CustomerOverForTwoYears when !isGroceriesProduct => totalAmount - (totalAmount * 5 / 100),
                 _ => totalAmount - (Math.Floor(totalAmount / 100) * 5),
             };
             return netAmount;
