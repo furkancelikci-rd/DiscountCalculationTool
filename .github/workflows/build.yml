@@ -43,5 +43,5 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"furkancelikci-rd_DiscountCalculationTool" /o:"furkancelikci-rd" /d:sonar.login="048574305e666c53802cf87793df54ad3a01b765" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build "DiscountCalculationTool.sln"
+          MSBuild.exe "DiscountCalculationTool.sln"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="048574305e666c53802cf87793df54ad3a01b765"
