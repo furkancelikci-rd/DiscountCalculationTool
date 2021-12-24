@@ -38,7 +38,7 @@ namespace DCT.BLL.Test
 
             var response = discountOperation.GetInvoiceAmount(normalUserModel);
 
-            Assert.AreEqual(response, 275);
+            Assert.AreEqual(275, response);
         }
 
         [Test]
@@ -61,7 +61,7 @@ namespace DCT.BLL.Test
 
             var response = discountOperation.GetInvoiceAmount(normalUserModel);
 
-            Assert.AreEqual(response, 210);
+            Assert.AreEqual(210, response);
         }
 
         [Test]
@@ -84,7 +84,7 @@ namespace DCT.BLL.Test
 
             var response = discountOperation.GetInvoiceAmount(normalUserModel);
 
-            Assert.AreEqual(response, 285);
+            Assert.AreEqual(285, response);
         }
 
         [Test]
@@ -107,7 +107,7 @@ namespace DCT.BLL.Test
 
             var response = discountOperation.GetInvoiceAmount(normalUserModel);
 
-            Assert.AreEqual(response, 270);
+            Assert.AreEqual(270, response);
         }
 
         [Test]
@@ -130,7 +130,7 @@ namespace DCT.BLL.Test
 
             var response = discountOperation.GetInvoiceAmount(normalUserModel);
 
-            Assert.AreEqual(response, 285);
+            Assert.AreEqual(285, response);
         }
 
         [Test]
@@ -153,7 +153,7 @@ namespace DCT.BLL.Test
 
             var response = discountOperation.GetInvoiceAmount(normalUserModel);
 
-            Assert.AreEqual(response, 255);
+            Assert.AreEqual(255, response);
         }
 
     }
